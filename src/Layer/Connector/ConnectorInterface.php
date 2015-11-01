@@ -14,11 +14,11 @@ interface ConnectorInterface
      * @param $password
      * @return mixed
      */
-    public function connect($host, $user, $password);
+    public function dbConnect($host,$databaseName, $user, $password);
 
     /**
      * @param $db
      * @return mixed
      */
-    public function connectClose($db);
+    public function dbConnectClose($db);
 }
